@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lanchonete do Bairro</title>
+  <meta name="description" content="Hambúrgueres, porções e bebidas. Peça no WhatsApp!" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="logo">🍔 <b>Lanchonete</b> do Bairro</div>
+
+      <nav class="nav">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#local">Local</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="btn btn--outline" id="btnMenu">☰</button>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#local">Local</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="tag">Entrega • Retirada • Aberto hoje</p>
+        <h1>Seu lanche favorito, <span class="grad">rápido</span> e <span class="grad">caprichado</span>.</h1>
+        <p class="lead">Hambúrguer artesanal, porções e bebidas geladas. Clique e peça no WhatsApp.</p>
+
+        <div class="actions">
+          <a class="btn" id="btnWhats" href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+          <a class="btn btn--outline" href="#cardapio">Ver Cardápio</a>
+        </div>
+
+        <div class="badges">
+          <span>⭐ 4,8 no Google</span>
+          <span>⏱️ 20–40 min</span>
+          <span>💳 Pix/Cartão</span>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <div class="heroCard__img" aria-label="Imagem de lanche"></div>
+        <div class="heroCard__info">
+          <b>Combo do Dia</b>
+          <p>Hambúrguer + Batata + Refri</p>
+          <div class="priceRow">
+            <span class="price">R$ 29,90</span>
+            <a class="mini" href="#cardapio">ver itens</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="section" id="cardapio">
+    <div class="container">
+      <h2>Cardápio</h2>
+      <p class="muted">Clique em “Adicionar” e depois em “Finalizar pedido” para mandar no WhatsApp.</p>
+
+      <div class="grid">
+        <article class="item">
+          <div class="item__top">
+            <h3>X-Salada</h3>
+            <span class="pill">Mais pedido</span>
+          </div>
+          <p class="muted">Pão, hambúrguer, queijo, alface, tomate e molho.</p>
+          <div class="item__bottom">
+            <b>R$ 18,90</b>
+            <button class="btnSmall" data-name="X-Salada" data-price="18.90">Adicionar</button>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item__top">
+            <h3>X-Bacon</h3>
+            <span class="pill">Top</span>
+          </div>
+          <p class="muted">Hambúrguer, queijo, bacon crocante e molho especial.</p>
+          <div class="item__bottom">
+            <b>R$ 22,90</b>
+            <button class="btnSmall" data-name="X-Bacon" data-price="22.90">Adicionar</button>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item__top">
+            <h3>Batata Frita</h3>
+            <span class="pill">Porção</span>
+          </div>
+          <p class="muted">Porção média com cheddar e bacon (opcional).</p>
+          <div class="item__bottom">
+            <b>R$ 16,90</b>
+            <button class="btnSmall" data-name="Batata Frita" data-price="16.90">Adicionar</button>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item__top">
+            <h3>Refrigerante Lata</h3>
+            <span class="pill">Bebida</span>
+          </div>
+          <p class="muted">Coca, Guaraná, Fanta, Sprite (350ml).</p>
+          <div class="item__bottom">
+            <b>R$ 6,00</b>
+            <button class="btnSmall" data-name="Refrigerante Lata" data-price="6.00">Adicionar</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section section--alt" id="sobre">
+    <div class="container twoCol">
+      <div>
+        <h2>Sobre</h2>
+        <p class="muted">
+          Somos uma lanchonete de bairro com foco em qualidade e atendimento rápido.
+          Personalize seu pedido e fale direto no WhatsApp.
+        </p>
+        <ul class="list">
+          <li>✅ Ingredientes frescos</li>
+          <li>✅ Entrega e retirada</li>
+          <li>✅ Atendimento no WhatsApp</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Horário</h3>
+        <p class="muted">Seg–Sex: 18:00–23:30<br/>Sáb–Dom: 18:00–00:00</p>
+        <hr/>
+        <h3>Endereço</h3>
+        <p class="muted">Rua Exemplo, 123 • Centro</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL -->
+  <section class="section" id="local">
+    <div class="container">
+      <h2>Localização</h2>
+      <p class="muted">Troque o link do mapa pelo link certo do Google Maps da lanchonete.</p>
+
+      <div class="mapWrap">
+        <iframe
+          id="mapIframe"
+          title="Mapa"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Araras%20SP&output=embed">
+        </iframe>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn--outline" id="btnMaps" href="https://www.google.com/maps?q=Araras%20SP" target="_blank" rel="noopener">
+          Abrir no Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section--alt" id="contato">
+    <div class="container twoCol">
+      <div>
+        <h2>Contato</h2>
+        <p class="muted">Clique no botão e mande a mensagem pronta.</p>
+        <div class="actions">
+          <a class="btn" id="btnWhats2" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+        <p class="muted small">Telefone: (xx) xxxxx-xxxx • Instagram: @sualanchonete</p>
+      </div>
+
+      <div class="cart">
+        <div class="cart__top">
+          <h3>Seu pedido</h3>
+          <button class="link" id="clearCart">Limpar</button>
+        </div>
+        <div class="cart__list" id="cartList">
+          <p class="muted">Ainda vazio. Adicione itens do cardápio.</p>
+        </div>
+        <div class="cart__bottom">
+          <div class="totalRow">
+            <span>Total</span>
+            <b id="cartTotal">R$ 0,00</b>
+          </div>
+          <button class="btn" id="finishOrder">Finalizar pedido no WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Lanchonete do Bairro</span>
+      <span class="muted">Feito com HTML + CSS + JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
